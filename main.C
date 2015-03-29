@@ -14,12 +14,12 @@ int main(int argc, char *argv[])
 	//Appel de la fonction initialisant la partie 
 	SDL_Surface* ecran=gameInitialization();
 	
-	//Gestion musique 
+	//Music initialization
 	loadMusic(1);
 
 
 	SDL_FillRect(ecran, NULL, SDL_MapRGB(ecran->format, 255, 255, 255));
-	man = SDL_LoadBMP("Pictures/man.bmp");
+	man = SDL_LoadBMP("Pictures/character.bmp");
 
 	int color=SDL_SetColorKey(man, SDL_SRCCOLORKEY, SDL_MapRGB(man->format, 0, 0, 255));
 
